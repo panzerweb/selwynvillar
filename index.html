@@ -23,14 +23,14 @@
     <body class="bg-dark">
         <header>
             <!-- place navbar here -->
-            <nav class="navbar bg-dark shadow-sm position-fixed w-100">
+            <nav class="navbar bg-dark shadow-sm position-fixed w-100 z-3">
                 <div class="container">
 
                     <img src="./public/images/My_logo.png" alt="Logo" width="64" height="64" style="object-fit: contain;">
 
                     <span class="github-icon">
                         <a href="https://github.com/panzerweb" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github text-info" viewBox="0 0 16 16">
                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                             </svg>
                         </a>
@@ -41,7 +41,7 @@
         </header>
         <main>
             <div class="container text-light">
-                <div class="row justify-content-between gap-1">
+                <div class="row justify-content-between gap-2">
                     <!-- Personal Information Summary -->
                     <div class="col-12 col-lg-5">
                         <div class="position-fixed">
@@ -64,11 +64,12 @@
                                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
                                     </svg>
                                 </span>
+                                <br>
                                 Panabo, Davao, Philippines 
                             </p>
 
-                            <p class="text-center fst-italic text-light">
-                                A BSIT student that loves to create web apps and websites
+                            <p class="text-center fst-italic text-light text-wrap">
+                                Loves to create web apps and websites
                             </p>
 
                             <!-- Contacts -->
@@ -123,10 +124,143 @@
                     <!-- Projects, About Me, Tech Stacks -->
                     <div class="col-12 col-lg-6">
                         <!-- About  -->
-                         <div class="about-me-content">
-                            <h1>About Me</h1>
+                        <section class="about-me">
+                            <div class="accordion accordion-flush shadow mt-3" id="aboutAccordion">
+                                <div class="accordion-item bg-dark">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-bold fs-4 bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Tell me about yourself
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                                        <div class="accordion-body text-light">
+                                            <p class="fs-6 fw-normal">
+                                                Hello, I am Romeo Selwyn M. Villar, a BSIT Student from Davao del Norte State College.
+                                            </p>
+                                            <p class="fs-6 fw-normal">
+                                                I love creating simple to powerful web applications, as well as design websites for personal, and commercial use.
+                                                Coding is fun for me; I code mostly for fun, but also for something meaningful that is useful and practical in today's world.
+                                            </p>
 
-                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Skills -->
+                        <section class="skills-section">
+                            <div class="mt-4 mb-2">
+                                <h2 class="fw-bold mb-2">
+                                    Skills
+                                </h2>
+
+                                <!-- Programming Languages -->
+                                <div class="mb-4">
+                                    <h3>Languages</h3>
+                                    <div class="languages d-flex gap-2">
+                                        <span class="badge rounded-pill text-bg-success">HTML5</span>
+                                        <span class="badge rounded-pill text-bg-success">CSS3</span>
+                                        <span class="badge rounded-pill text-bg-success">JavaScript</span>
+                                        <span class="badge rounded-pill text-bg-success">Php</span>
+                                        <span class="badge rounded-pill text-bg-success">Java</span>
+                                        <span class="badge rounded-pill text-bg-success">Luascript</span>
+                                    </div>
+                                </div>
+
+                                <!-- Frameworks -->
+                                <div class="mb-4">
+                                    <h3>Frameworks</h3>
+                                    <div class="frameworks d-flex gap-2">
+                                        <span class="badge rounded-pill text-bg-danger">Laravel</span>
+                                        <span class="badge rounded-pill text-bg-danger">Electron JS</span>
+                                        <span class="badge rounded-pill text-bg-danger">Bootstrap 5</span>
+                                        <span class="badge rounded-pill text-bg-danger">Tailwind CSS</span>
+                                    </div>
+                                </div>
+
+                                <!-- Database -->
+                                <div class="mb-4">
+                                    <h3>Database</h3>
+                                    <div class="database d-flex gap-2">
+                                        <span class="badge rounded-pill text-bg-warning">MySQL</span>
+                                    </div>
+                                </div>
+                                <!-- Design & Arts -->
+                                <div class="mb-4">
+                                    <h3>Design & Arts</h3>
+                                    <div class="design d-flex gap-2">
+                                        <span class="badge rounded-pill text-bg-primary">Figma</span>
+                                        <span class="badge rounded-pill text-bg-primary">Canva</span>
+                                        <span class="badge rounded-pill text-bg-primary">Krita</span>
+                                        <span class="badge rounded-pill text-bg-primary">Pixilart</span>
+                                        <span class="badge rounded-pill text-bg-primary">Roblox Studio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <hr>
+                        <!-- Experiences -->
+                        <section class="experiences-section">
+                            <div class="mt-2 mb-2">
+                                <h2 class="fw-bold mb-3">Experiences</h2>
+
+                                <div class="experiences-gallery">
+                                    <!-- CODEX Experience -->
+                                    <div class="card bg-dark text-light border-0 shadow-sm p-3">
+                                        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                                            <!-- Logo -->
+                                            <div class="flex-shrink-0">
+                                                <img src="./public/images/school_logos/IC_Logo.png" class="rounded" alt="IC Logo" width="64">
+                                            </div>
+
+                                            <!-- Title & Subtitle -->
+                                            <div class="flex-grow-1 text-center text-md-start">
+                                                <h4 class="fw-semibold mb-1">Full Stack Web Developer</h4>
+                                                <p class="lead mb-0">Davao del Norte State College</p>
+                                                <small class="text-secondary">2024 – Present</small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Experience Details -->
+                                        <div class="exp-content mt-3">
+                                            <ul class="mb-0 ps-3">
+                                                <li>Actively participated in the <strong class="text-warning">DNSC Institute of Computing Coding Guild: CODEX</strong>, contributing to student-led software initiatives.</li>
+                                                
+                                                <li>Led the development of an <strong class="text-warning">RFID-Based Attendance Management System</strong> using Laravel, Blade, JavaScript, and PHP.</li>
+                                                
+                                                <li>Collaborated in a cross-functional team to plan, design, and implement core system features from initial concept to deployment.</li>
+                                                
+                                                <li>Spearheaded the frontend development, ensuring a responsive and user-friendly interface using modern web technologies.</li>
+                                                
+                                                <li>Provided backend development support, assisting in designing logical workflows and integrating RFID data with the Laravel framework.</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Tech Stack Details -->
+                                        <div class="mt-4 mb-3">
+                                            <div class="techstack d-flex gap-2 flex-wrap">
+                                                <span class="badge rounded-pill text-bg-success">Laravel</span>
+                                                <span class="badge rounded-pill text-bg-success">Blade</span>
+                                                <span class="badge rounded-pill text-bg-success">Vite</span>
+                                                <span class="badge rounded-pill text-bg-success">JavaScript</span>
+                                                <span class="badge rounded-pill text-bg-success">Php</span>
+                                                <span class="badge rounded-pill text-bg-success">MySQL</span>
+                                                <span class="badge rounded-pill text-bg-success">Tailwind CSS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- More here... -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Projects -->
+                        <section class="projects-section">
+                            <div class="mt-2 mb-2">
+                                <h2 class="fw-bold">Projects</h2>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

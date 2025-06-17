@@ -1,3 +1,65 @@
+
+*{
+    font-family: "Fira Code", monospace;
+}
+
+:root{
+    --background: #212529;
+    --primary: #0dcaf0;
+    --text: #f8f9fa;
+    --text-secondary: #6c757d;
+    --success: #198754;
+    --success-accent: #0bfa8a;
+    --danger: #dc3545;
+    --danger-accent: #7a000c;
+    --warning: #ffc107;
+    --warning-accent: #806105;
+    --blue: #0d6efd;
+    --blue-accent: #76a8f3;
+}
+
 main{
     padding-top: 6rem;
+}
+
+/* Accordion */
+.accordion{
+    --bs-accordion-border-color: #202020;
+    --bs-accordion-border-width: 1px;
+}
+.accordion-button::after{
+   content: '🔽';
+}
+
+/* Programming Languages */
+.languages span{
+    color: var(--success-accent) !important;
+}
+/* Frameworks */
+.frameworks span{
+    color: var(--danger-accent) !important;
+}
+/* Database */
+.database span{
+    color: var(--warning-accent) !important;
+}
+/* Design */
+.design span{
+    color: var(--blue-accent) !important;
+}
+
+/* Experiences */
+.experiences-gallery .card{
+    border-left: 2px solid var(--blue-accent) !important;
+}
+
+.techstack span{
+    color: var(--success-accent) !important;
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+    .position-fixed {
+        position: relative !important;
+    }
 }

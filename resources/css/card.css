@@ -12,7 +12,7 @@
 .profile-card:hover {
     border-radius: 15px;
     cursor: pointer;
-    transform: scale(1.2) rotate(-10deg);
+    transform: scale(1.1) rotate(-10deg);
     box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
     background: rgb(103, 151, 255);
 }
