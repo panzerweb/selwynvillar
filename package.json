@@ -1,0 +1,19 @@
+{
+  "name": "selwynvillar",
+  "version": "1.0.0",
+  "description": "official personal portfolio of panzerweb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panzerweb/selwynvillar.git"
+  },
+  "author": "Panzerweb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panzerweb/selwynvillar/issues"
+  },
+  "homepage": "https://github.com/panzerweb/selwynvillar#readme"
+}
